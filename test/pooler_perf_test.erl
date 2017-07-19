@@ -1,7 +1,10 @@
 -module(pooler_perf_test).
 
 -compile([export_all]).
+
+ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
+endif.
 
 -define(gv(X, L), proplists:get_value(X, L)).
 

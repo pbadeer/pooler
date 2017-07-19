@@ -6,7 +6,10 @@
 -behaviour(gen_server).
 -define(SERVER, ?MODULE).
 
+ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
+endif.
+
 %% ------------------------------------------------------------------
 %% API Function Exports
 %% ------------------------------------------------------------------

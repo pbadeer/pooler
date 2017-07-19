@@ -1,6 +1,9 @@
 -module(pooler_tests).
 
+ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
+endif.
+
 -include("../src/pooler.hrl").
 
 -compile([export_all]).
